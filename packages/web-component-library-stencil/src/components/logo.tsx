@@ -1,16 +1,18 @@
-import { Component, h, Host } from '@stencil/core';
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2020-2023 Gemeente Utrecht
+ * Copyright (c) 2020-2023 Frameless B.V.
+ */
+
+import { Component, h } from '@stencil/core';
 
 @Component({
-  tag: 'utrecht-icon',
-  styleUrl: './icon.scss',
+  tag: 'utrecht-logo',
+  styleUrl: './logo.scss',
   shadow: true,
 })
-export class Icon {
+export class Logo {
   render() {
-    return (
-      <Host aria-hidden="true">
-        <slot></slot>
-      </Host>
-    );
+    return <slot></slot>;
   }
 }
